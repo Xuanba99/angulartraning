@@ -92,6 +92,43 @@
   
  <button type="button" class="btn btn-primary" (click)="onLoadData()">Load data</button>
   -->
+  
+  <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of users">  
+          <span class="text-danger" *ngIf="item.country==='VN'">
+            {{item.name}} - {{item.country}}
+         </span>
+         <span class="text-primary" *ngIf="item.country==='US'">
+            {{item.name}} - {{item.country}}
+         </span>
+         <span class="text-default" *ngIf="item.country !=='VN' && item.country!=='US'">
+            {{item.name}} - {{item.country}}
+         </span>
+      </li>
+     
+  </ul>
+
+  <hr/>
+  <h3>ngSwitchCase</h3>
+  <ul class="list-group">
+    <li class="list-group-item" 
+    *ngFor="let item of users"
+    [ngSwitch]="item.country"
+    >  
+        <span class="text-danger" *ngSwitchCase="'VN'">
+          {{item.name}} - {{item.country}}
+       </span>
+       <span class="text-primary" *ngSwitchCase="'US'">
+        {{item.name}} - {{item.country}}
+     </span>
+     <span  *ngSwitchDefault>
+        {{item.name}} - {{item.country}}
+     </span>
+    </li>
+   
+</ul>
+  
+
 
  
  
