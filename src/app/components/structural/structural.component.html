@@ -1,0 +1,98 @@
+<!-- <h1 *ngIf="isShow">Ho ten: {{username}}</h1>
+
+<button type="button" class="btn btn-success" (click)="ontoggle()">button</button>
+
+
+<div class="radio">
+    <label> 
+        <input type="radio" name="rdCheck" (click)="onChange(true)" />
+      Hop le
+    </label>
+    <label>
+        <input type="radio" name="rdCheck"  (click)="onChange(false)" />
+      khong hop le
+    </label>
+</div>
+
+<h3 *ngIf="isChecked; else elseBlock"> Hop le</h3>
+ 
+
+<ng-template #elseBlock>
+    <h3>Khong Hop le</h3>
+</ng-template>
+
+<hr/>
+
+<div class="form-group">
+    <label>Tuoi:</label>
+    <input type="text" class="form-control" [(ngModel)]="age"/>
+</div>
+ 
+<ng-container *ngIf="age >18;  else elseNotEnough">
+    <h3>du tuoi</h3>
+</ng-container>
+ 
+<ng-template #elseNotEnough>
+   <h2> chua du tuoi</h2>
+</ng-template>
+<hr/>
+
+<hr/>
+
+<hr/>
+
+ -->
+<!--  
+ <ul class="list-group">
+     <li class="list-group-item" *ngFor="let item of names">
+         {{item}}
+     </li>
+ </ul>
+
+ <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of names">
+        {{item}}
+    </li>
+</ul>
+ <ng-container *ngIf="products.length>0; else elseNoproduct">
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+               <th>STT</th>
+                <th>MASP</th>
+                <th>Ten</th>
+                <th>Hinh anh</th>
+   
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of products; 
+            let i = index
+            let f = first
+            let l = last
+            trackBy:myTrack
+            "
+            [style.background-color]=" f === true? 'gray':''"
+            [style.background-color]="(l === true)? 'yellow':(f===true)?'gray':'white'">
+               <td>{{i+1}}</td>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td><img src={{item.image}}/> </td>
+            </tr>
+        </tbody>
+    </table>
+ </ng-container>
+ <ng-template #elseNoproduct>
+     <h2>KHong con san pham</h2>
+ </ng-template>
+ 
+ 
+ 
+  
+ <button type="button" class="btn btn-primary" (click)="onLoadData()">Load data</button>
+  -->
+
+ 
+ 
+
